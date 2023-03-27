@@ -1,6 +1,24 @@
-.navbar{
-    position: fixed;
-    top: 0;
-    right: 0;
-    padding: 10px;
+/*HEADER STYLES*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px,10%;
+}
+/*NAV BAR STYLES*/
+.navbar ul{
+    list-style: none;
+}
+
+.navbar li{/*Styling the individual nav items*/
+    display: inline-block;
+    padding: 0px,20px;
+}
+
+.navbar li a{/*animation to the nav items*/
+    transition: all 0.3s ease 0s;
+}
+
+.navbar li a:hover{/*Highlights the nav items in green color*/
+    color: darkolivegreen;
 }

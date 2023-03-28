@@ -22,3 +22,16 @@ header{
 .navbar li a:hover{/*Highlights the nav items in green color*/
     color: darkolivegreen;
 }
+
+
+/*STYLING THE MAIN CONTENT*/
+.hero img{
+    width: 30%;
+    height: 30%;
+}
+
+body{/*Adding the bg image to the home page*/
+    background-image: url('images/tea_home.jpeg');
+    background-size: cover;
+    position: relative;
+}

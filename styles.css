@@ -8,11 +8,20 @@ header{
 /*NAV BAR STYLES*/
 .navbar ul{
     list-style: none;
+    background-color: cadetblue;/*temp bg to display nav text*/
 }
 
-.navbar li{/*Styling the individual nav items*/
+.navbar ul li{/*Styling the individual nav items*/
+    list-style: none;
     display: inline-block;
-    padding: 0px,20px;
+    padding: 6px 10px;
+    position: relative;
+}
+
+.navbar li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
 }
 
 .navbar li a{/*animation to the nav items*/
@@ -34,4 +43,18 @@ body{/*Adding the bg image to the home page*/
     background-image: url('images/tea_home.jpeg');
     background-size: cover;
     position: relative;
+}
+
+body{/*trying out some font styles*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 }

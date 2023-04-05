@@ -2,7 +2,7 @@ html {
     font-size: 62.5%;
     overflow-x: hidden;
 }
-
+/*HOME PAGE STYLES*/
 /*HEADER STYLES*/
 header {
     display: flex;
@@ -15,7 +15,7 @@ header {
 /*NAV BAR STYLES*/
 .navbar ul {
     list-style: none;
-    background-color: cadetblue;
+    background-color: rgba(13, 90, 13, 0.902);
     /*temp bg to display nav text*/
 }
 
@@ -54,11 +54,13 @@ header {
     /*BACKGROUND IMG STYLE FOR HOME*/
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     background: url(images/tea_home.jpeg) no-repeat;
     background-size: cover;
     background-position: center;
+    border: 2px solid red;
 }
 
 /* body {
@@ -79,14 +81,24 @@ body {
 
 .hero {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: flex-end;
+    border: 2px red solid;
+    position: relative;
+    top: 20rem;
+    left: 26%;
 }
 
-.hero .text-box {/*new style to the text content in the hero section*/
+/* .hero h2 {
+    align-self: right;
+    
+} */
+
+/* .hero .text-box {
     font-size: 1.9rem;
     color: black;
-    padding: 1rem 0;
+    padding: 6.6rem 3rem;
     width: 60rem;
     position: relative;
     top: 50%;
@@ -94,7 +106,7 @@ body {
     transform: translate(-50%, -50%);
     text-align: right;
     margin-top: 20%;
-}
+} */
 
 /* .hero .text-box {
     width: 90%;
@@ -107,24 +119,28 @@ body {
     margin-top: 20%;
 } */
 
+
+
 /*BANNER  STYLE (THING THAT COMES AFTER THE HOME CONTENT)*/
 .banner {
     background-color: darkgreen;
-    /* padding: 40px; */
     padding: 1rem;
+    position: relative;
+    top: 40rem;
     text-align: center;
     color: #FFF;
     margin: 20px;
+    width: 100%;
 }
 
-.banner a {
+/* .banner a {
     display: inline-block;
     background-color: limegreen;
     color: #FFF;
     padding: 12px 30px;
     text-decoration: none;
     border-radius: 6px;
-}
+} */
 
 /* .banner{
     width: 80%;
@@ -132,3 +148,26 @@ body {
     text-align: center;
     padding-top: 100px;
 } */
+/*HOME PAGE STYLES END HERE*/
+
+/*ABOUT PAGE STYLES*/
+.about{
+    min-height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about .content{
+    font-size: 1.9rem;
+    color: black;
+    padding: 6.6rem 3rem;
+    width: 60rem;
+    position: relative;
+    top: 30%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    margin-top: 20%;
+}
+

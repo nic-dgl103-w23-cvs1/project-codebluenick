@@ -123,7 +123,6 @@ body {
 
 /*BANNER  STYLE (THING THAT COMES AFTER THE HOME CONTENT)*/
 .banner {
-    background-color: darkgreen;
     background-image: url(images/banner.jpeg);
     padding: 1rem;
     position: relative;
@@ -172,3 +171,37 @@ body {
     margin-top: 20%;
 }
 
+.about {
+    /*BACKGROUND IMG STYLE FOR ABOUT*/
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url(images/about_bg.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid red;
+}
+
+.about .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    top: 30rem;
+    left: 34rem;
+}
+
+.product{
+       /*BACKGROUND IMG STYLE FOR PRODUCT*/
+       min-height: 100vh;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       background: url(images/products_bg.jpeg) no-repeat;
+       background-size: cover;
+       background-position: center;
+       border: 2px solid red;
+}

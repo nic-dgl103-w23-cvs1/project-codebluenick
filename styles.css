@@ -53,30 +53,37 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: url(images/tea_home.jpeg) no-repeat;
+    background: url(images/home_bg.jpeg) no-repeat; 
+    background-color: #FFF;
     background-size: cover;
     background-position: center;
     /* border: 2px solid red; */
 }
 
+.home h2{
+    font-family: 'Lato', sans-serif;
+    font-size: 6.5rem;
+    text-align: center;
+    color: #FFF;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    justify-content: center;
+    margin-top: 20rem;
+}
+
+main p{
+    text-align: center;
+    width: 60%;
+    padding: 6rem 30rem;
+    font-size: 1.8rem;
+}
+
 body {
     /*trying out some font styles*/
     font-family: 'Lato', sans-serif;
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 1.5;
     margin: 0;
     padding: 0;
-}
-
-.hero {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-end;
-    /* border: 2px red solid; */
-    position: relative;
-    top: 20rem;
-    left: 26%;
 }
 
 /*BANNER  STYLE (THING THAT COMES AFTER THE HOME CONTENT)*/
@@ -85,12 +92,18 @@ body {
     background-size: cover;
     padding: 1rem;
     position: relative;
-    top: 40rem;
+    top: 84rem;
     text-align: center;
     color: black;
     margin: 20px;
     width: 100%;
-    background-position: 15%;
+    background-position: 30%;
+}
+
+.banner h1{
+    color: #FFF;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    font-size: 3.8rem;
 }
 
 .banner a {
@@ -101,32 +114,15 @@ body {
     text-decoration: none;
     border-radius: 6px;
 }
+.banner p{
+    font-size: 2rem;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
 
 /*HOME PAGE STYLES END HERE*/
 
 /*ABOUT PAGE STYLES*/
 .about {
-    min-height: 20vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.about .content {
-    font-size: 1.9rem;
-    color: black;
-    padding: 6.6rem 3rem;
-    width: 60rem;
-    position: relative;
-    top: 30%;
-    left: 20%;
-    transform: translate(-50%, -50%);
-    text-align: left;
-    margin-top: 20%;
-}
-
-.about {
-    /*BACKGROUND IMG STYLE FOR ABOUT*/
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -135,27 +131,20 @@ body {
     background: url(images/about_bg.jpeg) no-repeat;
     background-size: cover;
     background-position: center;
-    /* border: 2px solid red; */
 }
 
 .about .content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    position: relative;
-    top: 30rem;
-    left: 34rem;
+    font-size: 1.9rem;
+    color: black;
+    padding: 6.6rem 3rem;
+    width: 60rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.about h2 {
-    font-family: 'Lato', sans-serif;
-    align-self: center;
-}
-
-.about .content p {
-    font-family: 'Lato', sans-serif;
-    text-align: center;
-}
+.about
 
 /*ABOUT PAGE STYLES END HERE*/
 
@@ -250,6 +239,13 @@ body {
 /*HISTORY PAGE syles END HERE*/
 
 /*BUSINESSES PAGE styles*/
+.businesses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 4rem;
+}
+
 .businesses .description h2 {
     font-family: 'Lato', sans-serif;
     text-align: center;
@@ -260,19 +256,34 @@ body {
     padding: 2rem 25rem;
 }
 
-.businesses .card{
+.businesses .card {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin: 2rem;
-    padding: 2rem;
+    padding: 4rem;
     text-align: center;
     width: 40%;
 }
 
-.businesses .card img{
+.businesses .card img {
     height: 20%;
     width: 20%;
     margin-bottom: 2rem;
 }
+
+.businesses .card a {
+    background-color: #333;
+    border-radius: 4px;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 1rem;
+}
+
+.card a:hover {
+    background-color: #666;
+}
+
 /*BUSINESSES PAGE styles END HERE*/

@@ -70,12 +70,12 @@ header {
     margin-top: 20rem;
 }
 
-main p{
+ .para p{ 
     text-align: center;
     width: 60%;
-    padding: 6rem 30rem;
+    padding: 10rem 30rem;
     font-size: 1.8rem;
-}
+} 
 
 body {
     /*trying out some font styles*/
@@ -122,7 +122,7 @@ body {
 /*HOME PAGE STYLES END HERE*/
 
 /*ABOUT PAGE STYLES*/
-.about {
+/* .about {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -131,9 +131,9 @@ body {
     background: url(images/about_bg.jpeg) no-repeat;
     background-size: cover;
     background-position: center;
-}
+} */
 
-.about .content {
+/* .about .content {
     font-size: 1.9rem;
     color: black;
     padding: 6.6rem 3rem;
@@ -142,9 +142,26 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+} */
+
+.about {
+    background: url(images/about_bg.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    min-height: 100vh;
 }
 
-.about
+.about .content h2{
+    text-align: center;
+    padding-top: 4rem;
+}
+.about .content p{
+    width: 50%;
+    text-align: center;
+    padding: 8rem 40rem;
+    font-size: 1.8rem;
+}
 
 /*ABOUT PAGE STYLES END HERE*/
 
@@ -195,6 +212,7 @@ body {
 
 .product-description p {
     font-family: 'Lato', sans-serif;
+    font-size: 1.8rem;
 }
 
 /*Styles for the PRODUCT PAGE END HERE*/
@@ -213,6 +231,7 @@ body {
 
 .history p {
     font-family: 'Lato', sans-serif;
+    font-size: 1.8rem;
 }
 
 .history .gallery {
@@ -254,6 +273,7 @@ body {
 .businesses .description {
     font-family: 'Lato', sans-serif;
     padding: 2rem 25rem;
+    font-size: 1.8rem;
 }
 
 .businesses .card {
@@ -287,3 +307,50 @@ body {
 }
 
 /*BUSINESSES PAGE styles END HERE*/
+
+/* For screens smaller than 768px */
+@media (max-width: 767px) {
+
+    html {
+        font-size: 50%;
+    }
+
+    header {
+        padding: 0.6rem 1rem;
+    }
+
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(13, 90, 13, 0.902);
+    }
+
+    .navbar ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .home h2{
+        font-size: 4.5rem;
+        margin-top: 15rem;
+    }
+
+    .para p{ 
+        padding: 5rem 2rem;
+        font-size: 1.4rem;
+    } 
+
+    .banner {
+        top: 30rem;
+    }
+
+    .about .content p{
+        padding: 5rem 2rem;
+        font-size: 1.4rem;
+    }
+
+    .product-container {
+        width: 90%;
+    }
+}

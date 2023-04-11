@@ -30,6 +30,7 @@ header {
 
 .navbar li a {
     color: #fff;
+    font-family: 'Lato', sans-serif;
     text-decoration: none;
     font-size: 14px;
 }
@@ -212,20 +213,8 @@ body {
 
 .product h2{
     align-self: center;
+    font-family: 'Lato', sans-serif;
 }
-
-/* .product-container {
-    width: 24%;
-    margin-bottom: 40px;
-    border-radius: 5px;
-    padding: 20px;
-    text-align: center;
-}
-
-.product-container {
-    max-width: 100%;
-    margin-bottom: 10px;
-} */
 
 .product-container{
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
@@ -241,9 +230,15 @@ body {
 
 .product-container img{
     width: 25%;
+    max-width: 25%;
     height: auto;
+    margin-right: 2rem;   
 }
 
-/* 
-.product-container p{
-} */
+.product-description{/*setting the text on the right side*/
+    flex: 2;
+}
+
+.product-description p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
